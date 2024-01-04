@@ -9,16 +9,11 @@ def pascal_triangle(n):
     """ Initialize Pascal's triangle with the first list """
     triangle = [[1]]
 
-    """ Generate the rest of the triangle """
     for z in range(1, n):
-
-        """ Get the rows in the triangle """
-        rows = triangle[-1]
-
-        """ Create the colums by adding the numbers above """
-        columns = [1] + [rows[i - 1] + rows[i] for i in range(1, len(rows))] + [1]
-
-        """ Add the new list to the triangle """
-        triangle.append(columns)
+        nlist = [1]
+        for x in range(1, z):
+            nlist.append(triangle[z - 1][x - 1] + triangle[z - 1][x])
+        nlist.append(1)
+        triangle.append(nlist)
 
     return triangle
