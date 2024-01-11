@@ -1,9 +1,9 @@
-## 0x01. Lockboxes
+# 0x01. Lockboxes
 
 * Algorithm
 * Python
 
-## Requirements
+# Requirements
 -  General
 
 * Allowed editors: vi, vim, emacs
@@ -17,8 +17,8 @@
 
 
 
-## Tasks
-# 0. Lockboxes
+# Tasks
+### 0. Lockboxes
 
 * You have n number of locked boxes in front of you. Each box is numbered sequentially from 0 to n - 1 and each box may contain keys to the other boxes.
 
